@@ -59,3 +59,6 @@ def edit_task(request, id, task_id):
     else:
         form = TaskForm(instance=task)
     return render(request, 'edit.html', {'form': form, 'task':task})
+
+def home(request):
+    return render(request, 'home.html', {})
